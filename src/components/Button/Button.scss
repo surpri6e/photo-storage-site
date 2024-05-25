@@ -1,0 +1,13 @@
+.button {
+    background-color: #132de8;
+    color: white;
+
+    border-radius: 32px;
+    padding: 12px 20px;
+
+    transition: all 200ms linear;
+
+    &:hover {
+        background-color: darken(#132de8, 10);
+    }
+}

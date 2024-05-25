@@ -1,0 +1,39 @@
+.main {
+    height: 660px;
+}
+
+.main_body {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_background {
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.main_info {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > *:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.main_title {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+}
+
+.main_text {
+    text-align: center;
+}

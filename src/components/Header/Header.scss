@@ -1,0 +1,15 @@
+@import '../../styles/vars.scss';
+
+.header {
+    height: 76px;
+    position: fixed;
+    width: 100%;
+
+    background-color: $black;
+}
+
+.header_body {
+    width: 100%;
+
+    display: flex;
+}
