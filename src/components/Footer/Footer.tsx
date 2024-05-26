@@ -7,12 +7,12 @@ const Footer = () => {
                 <nav className='footer_nav'>
                     <ul className='footer_list'>
                         <li className='footer_elem'>
-                            <a href='../../../public/Surphoto1.0.0.exe' className='footer_link'>
+                            <a href='../../../public/Surphoto1.0.0.exe' className='footer_link' target='_blank'>
                                 Скачать
                             </a>
                         </li>
                         <li className='footer_elem'>
-                            <a href='../../../public/policy.docx' className='footer_link'>
+                            <a href='../../../public/policy.docx' className='footer_link' target='_blank'>
                                 Политика конфедициальности
                             </a>
                         </li>

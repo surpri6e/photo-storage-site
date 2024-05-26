@@ -3,14 +3,14 @@ import './Button.scss';
 
 interface IButton {
     message: string;
-    href: string;
+    onClick: () => void;
 }
 
-const Button: FC<IButton> = ({ message, href }) => {
+const Button: FC<IButton> = ({ message, onClick }) => {
     return (
-        <a href={href} className='button'>
+        <button className='button' onClick={onClick}>
             {message}
-        </a>
+        </button>
     );
 };
 
