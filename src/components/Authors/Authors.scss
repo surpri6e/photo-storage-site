@@ -1,0 +1,45 @@
+@import '../../styles/vars.scss';
+
+.authors {
+    padding: 80px 0;
+    background-color: $black;
+
+    position: relative;
+
+    .authors_background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+    }
+}
+
+.authors_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.author_name {
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+}
+
+.author_avatar {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+}

@@ -1,2 +1,29 @@
 .footer {
+    height: 120px;
+}
+
+.footer_nav {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_list {
+    display: flex;
+
+    & > *:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+.footer_link {
+    color: white;
+
+    transition: all 200ms linear;
+
+    &:hover {
+        color: darken(white, 20);
+    }
 }
