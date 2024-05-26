@@ -2,7 +2,7 @@ import './Cards.scss';
 
 const Cards = () => {
     return (
-        <div className='cards'>
+        <div className='cards' id='2'>
             <div className='_Container'>
                 <div className='cards_body'>
                     <div className='cards_list'>

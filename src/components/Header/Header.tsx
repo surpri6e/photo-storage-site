@@ -8,22 +8,22 @@ const Header = () => {
                     <nav className='nav'>
                         <ul className='nav_list'>
                             <li className='nav_elem'>
-                                <a href='' className='nav_link'>
+                                <a href='#2' className='nav_link'>
                                     Преимущества
                                 </a>
                             </li>
 
                             <li className='nav_elem'>
-                                <a href='' className='nav_link'>
+                                <a href='#1' className='nav_link'>
                                     Скачать
                                 </a>
                             </li>
 
-                            <li className='nav_elem'>
+                            {/* <li className='nav_elem'>
                                 <a href='' className='nav_link'>
                                     Поддержка
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                 </div>
