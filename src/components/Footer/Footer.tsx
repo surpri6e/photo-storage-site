@@ -3,7 +3,12 @@ import './Footer.scss';
 const Footer = () => {
     const onButtonClick = (name: string) => {
         // using Java Script method to get PDF file
-        fetch(`../../../public/${name}`).then((response) => {
+        fetch(`../../../public/${name}`, {
+            headers: {
+                'Content-Type': 'application/octet-stream',
+                'Content-Disposition': 'attachment; filename="preferred-filename.file-extension"',
+            },
+        }).then((response) => {
             response.blob().then((blob) => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
