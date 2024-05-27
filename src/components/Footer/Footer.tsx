@@ -1,25 +1,14 @@
 import './Footer.scss';
 
 const Footer = () => {
-    const onButtonClick = (name: string) => {
-        // using Java Script method to get PDF file
-        fetch(`../../../public/${name}`, {
-            headers: {
-                'Content-Type': 'application/octet-stream',
-                'Content-Disposition': 'attachment; filename="preferred-filename.file-extension"',
-            },
-        }).then((response) => {
-            response.blob().then((blob) => {
-                // Creating new object of PDF file
-                const fileURL = window.URL.createObjectURL(blob);
-
-                // Setting various property values
-                const alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = name;
-                alink.click();
-            });
-        });
+    const onButtonClick = () => {
+        const pdfUrl = 'policy.docx';
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'policy.docx'; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     return (
@@ -28,12 +17,12 @@ const Footer = () => {
                 <nav className='footer_nav'>
                     <ul className='footer_list'>
                         <li className='footer_elem'>
-                            <a onClick={() => onButtonClick('Surphoto1.0.0.exe')} className='footer_link'>
+                            <a onClick={() => onButtonClick()} className='footer_link'>
                                 Скачать
                             </a>
                         </li>
                         <li className='footer_elem'>
-                            <a onClick={() => onButtonClick('policy.docx')} className='footer_link'>
+                            <a onClick={() => onButtonClick()} className='footer_link'>
                                 Политика конфедициальности
                             </a>
                         </li>
