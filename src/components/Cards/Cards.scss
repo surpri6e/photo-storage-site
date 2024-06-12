@@ -21,6 +21,8 @@
 
     width: 300px;
 
+    flex: 1 1 auto;
+
     border-radius: 4px;
 }
 
@@ -39,4 +41,15 @@
 
 .card_text {
     text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+    .card {
+        padding: 10px;
+    }
+
+    .card_title {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }

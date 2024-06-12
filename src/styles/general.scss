@@ -1,0 +1,18 @@
+.title {
+    color: white;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 770px) {
+    .title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title {
+        font-size: 38px;
+        line-height: 38px;
+    }
+}

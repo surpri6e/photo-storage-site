@@ -8,6 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 0 1.5rem;
 }
 
 .main_background {
@@ -16,7 +18,8 @@
 }
 
 .main_info {
-    width: 600px;
+    width: 50%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,13 +30,17 @@
 }
 
 .main_title {
-    color: white;
     text-align: center;
-    font-weight: 700;
     font-size: 64px;
     line-height: 72px;
 }
 
 .main_text {
     text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    .main_info {
+        width: 100%;
+    }
 }

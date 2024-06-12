@@ -2,4 +2,70 @@
 
 .support {
     background-color: $black;
+
+    padding: 60px 0;
+}
+
+.support_body {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.support_title {
+    font-size: 52px;
+    line-height: 62px;
+
+    margin-bottom: 15px;
+}
+
+.support_left {
+    width: 45%;
+}
+
+.support_right {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+
+    & > *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    z-index: 1000;
+}
+
+.support_input {
+    height: 54px;
+    padding: 0 16px;
+    background-color: #272b42;
+    color: white;
+    font-size: 16px;
+}
+
+.support_textarea {
+    padding: 16px;
+    font-size: 16px;
+
+    background-color: #272b42;
+    color: white;
+    resize: none;
+
+    height: 160px;
+}
+
+@media screen and (max-width: 750px) {
+    .support_body {
+        flex-direction: column;
+    }
+
+    .support_left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .support_right {
+        width: 100%;
+    }
 }
