@@ -5,6 +5,37 @@
         <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
         <title>Surphoto</title>
+
+        <meta name="description" content="Surphoto - лучшее облачное, файловое хранилище!" />
+        <meta name="keywords" content="Хранилище, Облачное хранилище, Surphoto, Photo-storage" />
+
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://surphoto.vercel.app/" />
+        <meta name="og:title" content="Surphoto" />
+        <meta name="og:image" content="/favicon.jpg" />
+        <meta
+            name="og:description"
+            content="Surphoto - лучшее облачное, файловое хранилище! Заходи по ссылке и получай 100 МБ свободного места абсолютно бесплатно!"
+        />
+
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="
+        connect-src
+            ws://localhost:5173
+            https://firestore.googleapis.com
+            https://identitytoolkit.googleapis.com
+            https://firebase.googleapis.com
+            https://securetoken.googleapis.com
+            https://firebaseinstallations.googleapis.com
+            https://firebasestorage.googleapis.com
+            https://www.google-analytics.com;
+        default-src 'self';
+        script-src 'self' https://apis.google.com https://www.googletagmanager.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' https://firebasestorage.googleapis.com https://placehold.co https://www.googletagmanager.com data:"
+        />
     </head>
     <body>
         <div id="root"></div>
