@@ -13,3 +13,12 @@
         background-color: darken(#132de8, 10);
     }
 }
+
+.button--disabled {
+    cursor: auto;
+    background-color: darken(#132de8, 20);
+
+    &:hover {
+        background-color: darken(#132de8, 20);
+    }
+}

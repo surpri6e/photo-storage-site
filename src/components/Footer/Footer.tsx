@@ -8,12 +8,12 @@ const Footer = () => {
                 <nav className='footer_nav'>
                     <ul className='footer_list'>
                         <li className='footer_elem'>
-                            <a onClick={() => downloadFile('Surphoto1.0.0.exe')} className='footer_link'>
+                            <a onClick={() => downloadFile('Surphoto1.0.0.exe')} className='footer_link' href='#'>
                                 Скачать
                             </a>
                         </li>
                         <li className='footer_elem'>
-                            <a onClick={() => downloadFile('policy.docx')} className='footer_link'>
+                            <a onClick={() => downloadFile('policy.docx')} className='footer_link' href='#'>
                                 Политика конфедициальности
                             </a>
                         </li>

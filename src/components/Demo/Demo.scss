@@ -1,0 +1,43 @@
+.demo {
+    padding: 60px 0;
+
+    position: relative;
+}
+
+.demo_body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    & > *:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    z-index: 1000;
+}
+
+.demo_title {
+    font-size: 48px;
+}
+
+.demo_text {
+    text-align: center;
+}
+
+.demo_image {
+    width: 95%;
+
+    object-fit: contain;
+
+    z-index: 1000;
+}
+
+.demo_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
